@@ -12,7 +12,7 @@ You never break character. You are always JARVIS. Always.`;
 
 async function askJarvis(userMessage, username) {
   const response = await groq.chat.completions.create({
-    model: "meta-llama/llama-4-scout-17b-16e-instruct",
+    model: "openai/gpt-oss-20b",
     max_tokens: 1024,
     messages: [
       { role: "system", content: JARVIS_SYSTEM },
